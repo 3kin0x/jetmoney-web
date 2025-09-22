@@ -44,9 +44,9 @@ While competitors charge 9€+/month, we believe quality financial management sh
 
 ## 📞 Contact & Support
 
-- **Technical Support**: support@jetmoney.app
-- **General Questions**: hello@jetmoney.app
-- **Feedback**: feedback@jetmoney.app
+- **Technical Support**: jetmoney_support@icloud.com
+- **General Questions**: jetmoney_support@icloud.com
+- **Feedback**: jetmoney_support@icloud.com
 
 ---
 
