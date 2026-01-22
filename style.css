@@ -258,9 +258,11 @@ h1 {
 }
 
 .feature-icon {
+    display: inline-block; /* Ensure transform origin relates to the icon size, not full width */
     font-size: 32px;
     margin-bottom: 15px;
     transition: transform 0.3s ease;
+    transform-origin: center center; /* Zoom from the middle of the icon */
 }
 
 .feature-item:hover .feature-icon {
