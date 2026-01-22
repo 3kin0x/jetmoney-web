@@ -86,35 +86,36 @@ header {
 /* Hero Graph */
 .hero-graph-container {
     position: absolute;
-    top: 0;
+    top: 50%; /* Center vertically relative to hero */
     left: 50%;
-    transform: translateX(-50%);
-    width: 120%; /* Wider than container to flow out */
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
+    transform: translate(-50%, -50%); /* Perfect centering */
+    width: 100vw; /* Full screen width */
+    max-width: 1400px; /* Limit max width */
+    height: 400px; /* Fixed height for the graph area */
+    z-index: -1; /* Behind text */
+    overflow: visible; /* Allow glow to spread */
     pointer-events: none;
-    opacity: 0.6; /* Increased visibility slightly */
+    opacity: 0.8;
 }
 
 .hero-graph {
     width: 100%;
     height: 100%;
-    color: var(--accent-green); /* Sets currentColor */
+    display: block; /* Remove inline spacing */
 }
 
 .hero-graph path {
-    stroke: var(--accent-green); /* Fallback explicit color */
-    stroke-width: 4; /* Slightly thicker */
+    stroke: #00FF9D !important; /* Force Neon Green */
+    stroke-width: 4;
     stroke-linecap: round;
     fill: none;
-    /* Neon Glow */
-    filter: drop-shadow(0 0 10px rgba(0, 255, 157, 0.8));
+    /* Stronger Neon Glow */
+    filter: drop-shadow(0 0 15px rgba(0, 255, 157, 0.6));
     /* Animation setup */
     stroke-dasharray: 2000;
     stroke-dashoffset: 2000;
     animation: drawGraph 2.5s ease-out forwards;
-    animation-delay: 0.2s; /* Start sooner */
+    animation-delay: 0.2s;
 }
 
 @keyframes drawGraph {
