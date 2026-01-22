@@ -264,7 +264,7 @@ h1 {
 }
 
 .feature-item:hover .feature-icon {
-    transform: scale(1.2) rotate(5deg);
+    transform: scale(1.15); /* Just scale up, no rotation */
 }
 
 h3 {
