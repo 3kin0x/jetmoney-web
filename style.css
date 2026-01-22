@@ -94,26 +94,27 @@ header {
     z-index: -1;
     overflow: hidden;
     pointer-events: none;
-    opacity: 0.5; /* Subtle */
+    opacity: 0.6; /* Increased visibility slightly */
 }
 
 .hero-graph {
     width: 100%;
     height: 100%;
+    color: var(--accent-green); /* Sets currentColor */
 }
 
 .hero-graph path {
-    fill: none;
-    stroke: var(--accent-green);
-    stroke-width: 3;
+    stroke: var(--accent-green); /* Fallback explicit color */
+    stroke-width: 4; /* Slightly thicker */
     stroke-linecap: round;
+    fill: none;
     /* Neon Glow */
-    filter: drop-shadow(0 0 8px rgba(0, 255, 157, 0.6));
+    filter: drop-shadow(0 0 10px rgba(0, 255, 157, 0.8));
     /* Animation setup */
     stroke-dasharray: 2000;
     stroke-dashoffset: 2000;
-    animation: drawGraph 2s ease-out forwards;
-    animation-delay: 0.5s;
+    animation: drawGraph 2.5s ease-out forwards;
+    animation-delay: 0.2s; /* Start sooner */
 }
 
 @keyframes drawGraph {
