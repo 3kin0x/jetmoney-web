@@ -3,310 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support & Aide - JetMoney</title>
-    <meta name="description" content="Support et assistance pour JetMoney. FAQ, guides, et aide pour l'app de gestion budgétaire révolutionnaire.">
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-            background: linear-gradient(135deg, #0A0E2E 0%, #1a1a2e 50%, #16213e 100%);
-            min-height: 100vh;
-        }
-        .container {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
-            margin: 20px 0;
-        }
-        h1 {
-            background: linear-gradient(45deg, #1a73e8, #4285f4);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-align: center;
-            border-bottom: 3px solid #1a73e8;
-            padding-bottom: 15px;
-            margin-bottom: 30px;
-        }
-        .logo {
-            text-align: center;
-            font-size: 3em;
-            margin-bottom: 20px;
-            text-shadow: 0 0 20px rgba(26, 115, 232, 0.5);
-        }
-        h2 {
-            color: #1a73e8;
-            margin-top: 30px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .support-card {
-            background: linear-gradient(45deg, rgba(26, 115, 232, 0.05), rgba(66, 133, 244, 0.05));
-            padding: 20px;
-            border-radius: 12px;
-            margin: 15px 0;
-            border-left: 4px solid #4285f4;
-            box-shadow: 0 4px 20px rgba(26, 115, 232, 0.1);
-        }
-        .contact-method {
-            background: linear-gradient(45deg, rgba(76, 175, 80, 0.05), rgba(139, 195, 74, 0.05));
-            padding: 20px;
-            border-radius: 12px;
-            margin: 10px 0;
-            border: 1px solid #4caf50;
-            box-shadow: 0 4px 20px rgba(76, 175, 80, 0.1);
-        }
-        .faq-item {
-            background: rgba(250, 250, 250, 0.8);
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 12px;
-            border-left: 3px solid #ff9800;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease;
-        }
-        .faq-item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-        }
-        .highlight {
-            background: linear-gradient(45deg, rgba(26, 115, 232, 0.1), rgba(66, 133, 244, 0.1));
-            padding: 25px;
-            border-radius: 12px;
-            text-align: center;
-            margin: 30px 0;
-            border: 2px dashed #1a73e8;
-            box-shadow: 0 4px 20px rgba(26, 115, 232, 0.1);
-        }
-        .emoji {
-            font-size: 1.3em;
-            margin-right: 8px;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            padding: 30px;
-            background: linear-gradient(45deg, #1a73e8, #4285f4);
-            color: white;
-            border-radius: 12px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin: 10px 0;
-        }
-        strong {
-            color: #1a73e8;
-        }
-        a {
-            color: #1a73e8;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .quick-links {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
-        }
-        .quick-link {
-            background: linear-gradient(45deg, #1a73e8, #4285f4);
-            color: white;
-            padding: 20px;
-            border-radius: 12px;
-            text-align: center;
-            text-decoration: none;
-            transition: transform 0.2s ease;
-            box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
-        }
-        .quick-link:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 25px rgba(26, 115, 232, 0.4);
-        }
-    </style>
+    <title>Support - JetMoney</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="logo">🚀</div>
-        <h1>Support & Aide JetMoney</h1>
-        
-        <div class="highlight">
-            <strong>💎 Besoin d'aide ?</strong><br>
-            Notre équipe est là pour vous ! JetMoney s'engage à offrir le meilleur support pour votre expérience financière révolutionnaire.
+        <header>
+            <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">JetMoney</a></div>
+        </header>
+
+        <div class="glass-card">
+            <h1>Besoin d'aide ?</h1>
+            <p class="subtitle">Nous sommes là pour vous.</p>
+            
+            <div class="feature-item" style="text-align:center; margin-top: 40px;">
+                <h3>Contactez le développeur</h3>
+                <p>Une question ? Un bug ? Une suggestion ?</p>
+                <br>
+                <a href="mailto:support@jetmoney.app" class="btn">Envoyer un email</a>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <h3>FAQ Rapide</h3>
+                <p><strong>Comment supprimer une transaction ?</strong><br>Maintenez votre doigt appuyé sur la transaction (Long Press).</p>
+                <p><strong>Comment modifier mon solde ?</strong><br>Appuyez sur le bouton "Cible" en haut à droite de l'écran Vision.</p>
+            </div>
         </div>
 
-        <div class="quick-links">
-            <a href="#faq" class="quick-link">
-                <div class="emoji">❓</div>
-                <strong>FAQ Rapide</strong><br>
-                Réponses instantanées
-            </a>
-            <a href="#contact" class="quick-link">
-                <div class="emoji">📧</div>
-                <strong>Nous Contacter</strong><br>
-                Support personnalisé
-            </a>
-            <a href="#guides" class="quick-link">
-                <div class="emoji">🎓</div>
-                <strong>Guides & Tutos</strong><br>
-                Apprenez JetMoney
-            </a>
-        </div>
-
-        <h2 id="contact"><span class="emoji">📞</span>Nous Contacter</h2>
-        
-        <div class="contact-method">
-            <h3><span class="emoji">📧</span>Email Support (Recommandé)</h3>
-            <ul>
-                <li><strong>Support technique</strong> : jetmoney_support@icloud.com</li>
-                <li><strong>Questions générales</strong> : jetmoney_support@icloud.com</li>
-                <li><strong>Problèmes de paiement</strong> : jetmoney_support@icloud.com</li>
-                <li><strong>Suggestions & Feedback</strong> : jetmoney_support@icloud.com</li>
-            </ul>
-            <p><em>⏰ Temps de réponse : Moins de 24h en semaine</em></p>
-        </div>
-
-        <div class="contact-method">
-            <h3><span class="emoji">⭐</span>App Store Review</h3>
-            <p>Laissez un avis sur l'App Store pour un support rapide et aidez autres utilisateurs à découvrir JetMoney !</p>
-        </div>
-
-        <h2 id="faq"><span class="emoji">❓</span>Questions Fréquentes (FAQ)</h2>
-
-        <div class="faq-item">
-            <h3>💰 Comment fonctionne l'abonnement révolutionnaire 1€/mois ?</h3>
-            <p><strong>30 jours gratuits</strong> pour tester toutes les fonctionnalités, puis <strong>1€/mois automatiquement</strong>. Annulation facile via Réglages iOS → Apple ID → Abonnements. 10x moins cher que la concurrence !</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>🔒 Mes données financières sont-elles vraiment sécurisées ?</h3>
-            <p>Absolument ! <strong>Chiffrement AES-256-GCM de niveau militaire</strong> + stockage local sécurisé sur votre iPhone. Aucune synchronisation cloud forcée. Vos données vous appartiennent !</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>📱 Sur quels appareils JetMoney fonctionne-t-il ?</h3>
-            <p><strong>iPhone et iPad avec iOS 17+</strong>. Parfaitement optimisé pour tous les écrans, depuis l'iPhone SE jusqu'au iPhone 15 Pro Max. Design premium Apple natif !</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>🌍 Quelles langues et devises sont supportées ?</h3>
-            <p><strong>Langues</strong> : Français, Anglais (UK/US), Espagnol avec changement instantané.<br>
-            <strong>Devises</strong> : EUR (€), USD ($), GBP (£) avec formatage automatique selon votre région.</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>🔄 Comment annuler mon abonnement ?</h3>
-            <p>Super simple ! Réglages iOS → [Votre nom] → Abonnements → JetMoney → Annuler. <strong>Vos données restent sauvegardées</strong> et vous gardez l'accès jusqu'à la fin de la période payée.</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>📊 Puis-je exporter mes données ?</h3>
-            <p>Bien sûr ! Via JetMoney → Paramètres → Export. Vos données vous appartiennent ! Formats disponibles : CSV, PDF (bientôt disponible).</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>🔄 Comment synchroniser entre mes appareils Apple ?</h3>
-            <p>Fonctionnalité iCloud en développement pour 2025 ! Actuellement, les données sont stockées localement pour une sécurité maximale. Synchronisation optionnelle bientôt disponible.</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>⚡ Pourquoi JetMoney vs. la concurrence ?</h3>
-            <p><strong>Prix révolutionnaire</strong> : 1€/mois vs 9€+/mois ailleurs<br>
-            <strong>Sécurité supérieure</strong> : Chiffrement militaire<br>
-            <strong>Made in France</strong> : Respect de la vie privée européenne<br>
-            <strong>Support humain</strong> : Équipe réactive et bienveillante</p>
-        </div>
-
-        <h2 id="guides"><span class="emoji">🎓</span>Guides & Tutoriels</h2>
-        <div class="support-card">
-            <h3>📚 Guides Disponibles</h3>
-            <ul>
-                <li><strong>🚀 Premiers pas</strong> : Guide onboarding intégré dans l'app</li>
-                <li><strong>➕ Ajouter des transactions</strong> : Bouton FAB + formulaire intelligent</li>
-                <li><strong>🔄 Gérer les récurrences</strong> : Salaires, abonnements automatiques</li>
-                <li><strong>📊 Lire les projections</strong> : Graphiques interactifs sur 12 mois</li>
-                <li><strong>🗓️ Utiliser le calendrier</strong> : Vue d'ensemble de vos échéances</li>
-                <li><strong>🌍 Changer la langue</strong> : Paramètres → Langue (changement instantané)</li>
-            </ul>
-        </div>
-
-        <h2><span class="emoji">🐛</span>Signaler un Bug</h2>
-        <div class="support-card">
-            <p><strong>Trouvé un problème ?</strong> Aidez-nous à améliorer JetMoney :</p>
-            <ol>
-                <li><strong>Email</strong> : jetmoney_support@icloud.com</li>
-                <li><strong>Décrivez</strong> : Le problème rencontré en détail</li>
-                <li><strong>Modèle appareil</strong> : Ex: iPhone 15 Pro, iOS 17.5</li>
-                <li><strong>Étapes</strong> : Comment reproduire le bug</li>
-                <li><strong>Screenshots</strong> : Si possible (censurez les données sensibles)</li>
-            </ol>
-            <p><em>🏆 Chaque bug signalé nous aide à rendre JetMoney encore plus parfait !</em></p>
-        </div>
-
-        <h2><span class="emoji">💡</span>Demandes de Fonctionnalités</h2>
-        <div class="support-card">
-            <p><strong>Vos idées nous passionnent !</strong> Envoyez vos suggestions à : <strong>jetmoney_support@icloud.com</strong></p>
-            <h4>🔥 Fonctionnalités les plus demandées :</h4>
-            <ul>
-                <li>📸 <strong>Scan de reçus automatique</strong> avec IA</li>
-                <li>🤖 <strong>Prédictions IA</strong> pour votre budget futur</li>
-                <li>👨‍👩‍👧‍👦 <strong>Partage familial</strong> des budgets</li>
-                <li>🏦 <strong>Connexion comptes bancaires</strong> (Open Banking)</li>
-                <li>📈 <strong>Rapports PDF avancés</strong></li>
-                <li>⌚ <strong>Apple Watch</strong> companion app</li>
-            </ul>
-            <p><em>Votées par la communauté, développées par nos soins !</em></p>
-        </div>
-
-        <h2><span class="emoji">⚡</span>Support Express</h2>
-        <div class="support-card">
-            <p><strong>Problème urgent ?</strong> Solutions rapides :</p>
-            <ol>
-                <li>📧 <strong>Email urgent</strong> : jetmoney_support@icloud.com avec <strong>[URGENT]</strong> dans l'objet</li>
-                <li>⭐ <strong>App Store Review</strong> : Décrivez votre problème</li>
-                <li>🔄 <strong>Redémarrage app</strong> : Fermer/rouvrir résout 80% des problèmes</li>
-                <li>📱 <strong>iOS Update</strong> : Vérifiez avoir iOS 17+ à jour</li>
-                <li>🆔 <strong>Réinstallation</strong> : En dernier recours (données préservées)</li>
-            </ol>
-        </div>
-
-        <h2><span class="emoji">🌟</span>Liens Utiles</h2>
-        <div class="quick-links">
-            <a href="https://3kin0x.github.io/jetmoney-web/privacy-policy.html" class="quick-link">
-                <div class="emoji">🔒</div>
-                <strong>Confidentialité</strong><br>
-                Notre engagement sécurité
-            </a>
-            <a href="https://3kin0x.github.io/jetmoney-web/terms-of-service.html" class="quick-link">
-                <div class="emoji">📜</div>
-                <strong>Conditions</strong><br>
-                Termes d'utilisation
-            </a>
-        </div>
-
-        <div class="highlight">
-            <strong>🌟 Notre Promesse Support</strong><br>
-            <strong>Réponse sous 24h • Support humain et bienveillant • Solutions concrètes</strong><br>
-            Vous n'êtes pas qu'un utilisateur, vous êtes notre priorité ! 💎
-        </div>
-
-        <div class="footer">
-            <h3>💰 JetMoney - L'App Finance Révolutionnaire</h3>
-            <p>© 2025 JetMoney - Support premium inclus<br>
-            Made with ❤️ in France | 1€/mois pour une gestion premium<br>
-            <strong>30 jours gratuits • Sécurité militaire • Support humain</strong></p>
-        </div>
+        <footer>
+            <a href="index.html">Retour à l'accueil</a>
+        </footer>
     </div>
 </body>
 </html>
