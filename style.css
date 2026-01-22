@@ -68,12 +68,23 @@ header {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Space between logo and text */
     font-size: 24px;
     font-weight: 800;
     background: linear-gradient(90deg, var(--accent-blue), var(--accent-green));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -0.5px;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 40px; /* Adjust size */
+    width: auto;
+    border-radius: 10px; /* Apple-style rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow depth */
 }
 
 /* Hero Section */
